@@ -3,8 +3,10 @@
 Shiny Tiles is:
 * is a lightweight (1.2 KB) CSS file
 * plug-and-play
+* compatible with modern browsers that support CSS3 (IE10+)
 * customizble in any color!
 
+![Shiny Tiles Demo](demo.gif)
 
 ## How to Use
 
@@ -20,7 +22,7 @@ Shiny Tiles is:
 <div class="shiny-tile"></div>
 ```
 
-**Step 3 (optional):** You can use the provided `shiny-tile` content hierarchy. In this example, we use [Font-Awesome](https://fontawesome.com/) for the icon.
+**Step 3 (optional):** You can use the provided content hierarchy. In this example, we use [Font-Awesome](https://fontawesome.com/) for the icon.
 
 ```html
 <!-- Or use this template -->
@@ -42,14 +44,22 @@ Shiny Tiles is:
 
 ## Behind the Scenes: CSS
 
-Here's how `shiny-tiles` is working behind the scenes.
+Here's how Shiny Tiles is working behind the scenes.
 
 ```css
 .shiny-tile {
     position: relative;
+    z-index: 0;
 
     /* Keep the style inside the container */
     overflow: hidden;
+
+    /* Give it some styling */
+    border: 1px solid rgba(169, 178, 177, 0.7);
+    margin-bottom: -1px;
+    margin-right: -1px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     transition: all 0.4s ease;
 }
