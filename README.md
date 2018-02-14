@@ -4,7 +4,7 @@ Shiny Tiles is:
 * is a lightweight (1.2 KB) CSS file
 * plug-and-play
 * compatible with modern browsers that support CSS3 (IE10+)
-* customizble in any color!
+* customizable in any color!
 
 ![Shiny Tiles Demo](demo.gif)
 
