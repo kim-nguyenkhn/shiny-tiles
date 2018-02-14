@@ -1,27 +1,48 @@
 # Shiny Tiles ✨
 
-Make your buttons (or any row element) shiny ✨✨✨
-
 Shiny Tiles is:
-* is a lightweight (?KB) CSS file
+* is a lightweight (1.2 KB) CSS file
 * plug-and-play
 * customizble in any color!
 
 
 ## How to Use
 
-```html
-<!-- STYLESHEET -->
-<link rel="stylesheet" href="css/shiny-tile.css">
+**Step 1:** Add the `shiny-tile.css` to your page.
 
-<!-- HTML -->
+```html
+<link rel="stylesheet" href="css/shiny-tile.css">
+```
+
+**Step 2:** Add the `shiny-tile` class wherever you want.
+
+```html
+<div class="shiny-tile"></div>
+```
+
+**Step 3 (optional):** You can use the provided `shiny-tile` content hierarchy. In this example, we use [Font-Awesome](https://fontawesome.com/) for the icon.
+
+```html
+<!-- Or use this template -->
 <div class="shiny-tile">
-    <!-- Put your content here -->
+    <a href="">
+        <div class="shiny-tile-inner">
+            <div class="shiny-tile-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="shiny-tile-desc">
+                <div class="shiny-tile-title"></div>
+                <div class="shiny-tile-subtitle"></div>
+            </div>
+        </div>
+    </a>
 </div>
 ```
 
 
 ## Behind the Scenes: CSS
+
+Here's how `shiny-tiles` is working behind the scenes.
 
 ```css
 .shiny-tile {
