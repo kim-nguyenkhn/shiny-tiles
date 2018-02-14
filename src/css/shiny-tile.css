@@ -6,21 +6,6 @@
  * Created on: Feb 14, 2018 (Happy Valentine's Day)
  */
 
-
-/* === Normalizing for the demo === */
-* {
-  font-family: "Gotham-Medium", "Arial", sans-serif;
-  box-sizing: border-box;
-}
-
-*:before, *:after {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* === Shiny Tile Styles - heh that rhymes === */
 .shiny-tile {
     position: relative;
@@ -49,6 +34,7 @@ a {
     width: 130%;
     height: 120%;
 }
+
 
 /* === Shiny Tiles - Content hierarchy === */
 .shiny-tile .shiny-tile-inner {
