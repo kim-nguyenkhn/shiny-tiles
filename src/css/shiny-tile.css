@@ -1,0 +1,77 @@
+/**
+ * shiny-tile.css
+ *
+ * Author: Kim H. Nguyen
+ * Github: https://github.com/kim-nguyenkhn
+ * Created on: Feb 14, 2018 (Happy Valentine's Day)
+ */
+
+
+/* === Normalizing for the demo === */
+* {
+  font-family: "Gotham-Medium", "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* === Shiny Tile Styles - heh that rhymes === */
+.shiny-tile {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.shiny-tile:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shiny-tile:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #f5f5f5;
+    transform: skewX(-45deg);
+    transition: 0.4s;
+}
+
+.shiny-tile:hover:after {
+    left: -10%;
+    width: 130%;
+    height: 120%;
+}
+
+/* === Shiny Tiles - Content hierarchy === */
+.shiny-tile .shiny-tile-inner {
+  padding: 20px 5px;
+}
+
+.shiny-tile .shiny-tile-inner .shiny-tile-icon {
+  color: #444;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.shiny-tile .shiny-tile-inner .shiny-tile-desc {
+  margin-left: 38px;
+}
+
+.shiny-tile .shiny-tile-inner .shiny-tile-desc .shiny-tile-title {
+  color: #444444;
+  font-size: 18px;
+}
+
+.shiny-tile .shiny-tile-inner .shiny-tile-subtitle {
+  color: #808080;
+  margin-top: 5px;
+  font-size: 14px;
+}
