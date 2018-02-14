@@ -8,24 +8,25 @@ Shiny Tiles is:
 
 ![Shiny Tiles Demo](demo.gif)
 
-## How to Use
+## Quick Start
 
-**Step 1:** Add the `shiny-tile.css` to your page.
+* [Download the latest release.](https://github.com/kim-nguyenkhn/shiny-tiles/releases/latest)
+
+### CSS
+
+Everything is in `src/css/shiny-tile.css`.
+
+Move `shiny-tile.css` to your project's CSS folder, and then copy-paste the stylesheet `<link>` into your `<head>`. Be sure to change the path according to your project.
 
 ```html
-<link rel="stylesheet" href="css/shiny-tile.css">
+<link rel="stylesheet" href="YOUR_PATH_HERE/shiny-tile.css">
 ```
 
-**Step 2:** Add the `shiny-tile` class wherever you want.
+### Starter template
+
+You can use the provided content hierarchy. In this example, we use [Font-Awesome](https://fontawesome.com/) for the icon.
 
 ```html
-<div class="shiny-tile"></div>
-```
-
-**Step 3 (optional):** You can use the provided content hierarchy. In this example, we use [Font-Awesome](https://fontawesome.com/) for the icon.
-
-```html
-<!-- Or use this template -->
 <div class="shiny-tile">
     <a href="">
         <div class="shiny-tile-inner">
